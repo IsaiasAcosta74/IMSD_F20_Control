@@ -10,10 +10,11 @@ public class Movement : MonoBehaviour
 
     public float speed;
 
+
     private float timer;
     void Start()
     {
-        myTransform.position = new Vector3(-10, 0, 0);
+        myTransform.position = new Vector3(-1, 0, 0);
         timer = 0;
     }
 
@@ -27,7 +28,7 @@ public class Movement : MonoBehaviour
         if(timer >= 1)
         {
             timer = 0;
-            myTransform.position += new Vector3(1, 0, 0);
+            myTransform.position += new Vector3(1, 7, 0);
         }
     }
 }
