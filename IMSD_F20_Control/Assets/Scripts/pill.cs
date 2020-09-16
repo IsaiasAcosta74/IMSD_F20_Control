@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class pill : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public Transform myTransform;
     void Start()
     {
         

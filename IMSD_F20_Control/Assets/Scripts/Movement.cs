@@ -14,7 +14,7 @@ public class Movement : MonoBehaviour
     private float timer;
     void Start()
     {
-        myTransform.position = new Vector3(-1, 0, 0);
+        myTransform.position = new Vector3(0,7,0);
         timer = 0;
     }
 
