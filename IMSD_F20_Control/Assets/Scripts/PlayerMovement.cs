@@ -60,12 +60,12 @@ public class PlayerMovement : MonoBehaviour
     }
     void MoveByVelocity()
     {
-        moveSpeed = 500;
+        moveSpeed = 100;
         jumpSpeed = 600;
 
         if (movement != 0)
         {
-            rigidBody.velocity = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
+            rigidBody.velocity = new Vector3(Input.GetAxis("Horizontal")* moveSpeed, 0, Input.GetAxis("Vertical")* moveSpeed);
         }
         else
         {
